@@ -1,0 +1,548 @@
+//INTC
+INTC,40051000,0,4,4,4,8,4,C,4,10,4,14,4,18,4,1C,4,20,4,24,4,28,4,2C,4,50,4,54,4,58,4,5C,4,60,4,64,4,68,4,6C,4,70,4,74,4,78,4,7C,4,80,4,84,4,88,4,8C,4,90,4,94,4,98,4,9C,4,A0,4,A4,4,A8,4,AC,4,B0,4,B4,4,B8,4,BC,4,C0,4,C4,4,C8,4,CC,4,D0,4,D4,4,D8,4,DC,4,E0,4,E4,4,E8,4,EC,4,F0,4,F4,4,F8,4,FC,4,100,4,104,4,108,4,10C,4,110,4,114,4,118,4,11C,4,120,4,124,4,128,4,12C,4,130,4,134,4,138,4,13C,4,140,4,144,4,148,4,14C,4,150,4,154,4,158,4,15C,4,160,4,164,4,168,4,16C,4,170,4,174,4,178,4,17C,4,180,4,184,4,188,4,18C,4,190,4,194,4,198,4,19C,4,1A0,4,1A4,4,1A8,4,1AC,4,1B0,4,1B4,4,1B8,4,1BC,4,1C0,4,1C4,4,1C8,4,1CC,4,1D0,4,1D4,4,1D8,4,1DC,4,1E0,4,1E4,4,1E8,4,1EC,4,29C,4,2A0,4,2A4,4,
+
+//INTC_NMICR  NMI Control Register
+INTC_NMICR,0,32,rw,00000000,0000B0B1,
+NOCEN,15,15,rw,
+NOCSEL,13,12,rw,
+NMIFEN,7,7,rw,
+NMIFCLK,5,4,rw,
+NMITRG,0,0,rw,$,
+
+//INTC_NMIER  NMI Enable Register
+INTC_NMIER,4,32,rw,00000000,0000092F,
+WDTENR,11,11,rw,
+REPENR,8,8,rw,
+XTALSTPENR,5,5,rw,
+PVD2ENR,3,3,rw,
+PVD1ENR,2,2,rw,
+SWDTENR,1,1,rw,
+NMIENR,0,0,rw,$,
+
+//INTC_NMIFR  NMI Flag Register
+INTC_NMIFR,8,32,r,00000000,0000092F,
+WDTFR,11,11,r,
+REPFR,8,8,r,
+XTALSTPFR,5,5,r,
+PVD2FR,3,3,r,
+PVD1FR,2,2,r,
+SWDTFR,1,1,r,
+NMIFR,0,0,r,$,
+
+//INTC_NMICFR  NMI Flag Clear Register
+INTC_NMICFR,C,32,rw,00000000,0000092F,
+WDTCFR,11,11,rw,
+REPCFR,8,8,rw,
+XTALSTPCFR,5,5,rw,
+PVD2CFR,3,3,rw,
+PVD1CFR,2,2,rw,
+SWDTCFR,1,1,rw,
+NMICFR,0,0,rw,$,
+
+//INTC_EIRQCR0  EIRQ Control Regsiter0
+INTC_EIRQCR#0,10,32,rw,00000000,000080B3,
+NOCEN,15,15,rw,
+EFEN,7,7,rw,
+EISMPCLK,5,4,rw,
+EIRQTRG,1,0,rw,$,
+
+//INTC_EIRQCR1  EIRQ Control Regsiter1
+INTC_EIRQCR#1,14,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR2  EIRQ Control Regsiter2
+INTC_EIRQCR#2,18,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR3  EIRQ Control Regsiter3
+INTC_EIRQCR#3,1C,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR4  EIRQ Control Regsiter4
+INTC_EIRQCR#4,20,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR5  EIRQ Control Regsiter5
+INTC_EIRQCR#5,24,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR6  EIRQ Control Regsiter6
+INTC_EIRQCR#6,28,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_EIRQCR7  EIRQ Control Regsiter7
+INTC_EIRQCR#7,2C,32,rw,00000000,000080B3,/dr,INTC_EIRQCR#0,
+
+//INTC_WUPEN  Wake Up Enable Register
+INTC_WUPEN,50,32,rw,00000000,028F00FF,
+RXWUEN,25,25,rw,
+TMR0WUEN,23,23,rw,
+CMPI0WUEN,19,19,rw,
+PVD2WUEN,18,18,rw,
+PVD1WUEN,17,17,rw,
+SWDTWUEN,16,16,rw,
+EIRQWUEN,7,0,rw,$,
+
+//INTC_EIRQFR  EIRQ Flag Register
+INTC_EIRQFR,54,32,r,00000000,000000FF,
+EIRQFR,7,0,r,$,
+
+//INTC_EIRQCFR  EIRQ Flag Clear Register
+INTC_EIRQCFR,58,32,rw,00000000,000000FF,
+EIRQCFR,7,0,rw,$,
+
+//INTC_SEL0  Interrupt Source Select Register0
+INTC_SEL0,5C,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL1  Interrupt Source Select Register1
+INTC_SEL1,60,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL2  Interrupt Source Select Register2
+INTC_SEL2,64,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL3  Interrupt Source Select Register3
+INTC_SEL3,68,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL4  Interrupt Source Select Register4
+INTC_SEL4,6C,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL5  Interrupt Source Select Register5
+INTC_SEL5,70,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL6  Interrupt Source Select Register6
+INTC_SEL6,74,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL7  Interrupt Source Select Register7
+INTC_SEL7,78,32,rw,000001FF,000001FF,
+ISEL,8,0,rw,$,
+
+//INTC_SEL8  Interrupt Source Select Register8
+INTC_SEL8,7C,32,r,00000000,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL9  Interrupt Source Select Register9
+INTC_SEL9,80,32,r,00000001,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL10  Interrupt Source Select Register10
+INTC_SEL10,84,32,r,00000002,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL11  Interrupt Source Select Register11
+INTC_SEL11,88,32,r,00000003,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL12  Interrupt Source Select Register12
+INTC_SEL12,8C,32,r,00000004,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL13  Interrupt Source Select Register13
+INTC_SEL13,90,32,r,00000005,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL14  Interrupt Source Select Register14
+INTC_SEL14,94,32,r,00000006,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL15  Interrupt Source Select Register15
+INTC_SEL15,98,32,r,00000007,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL16  Interrupt Source Select Register16
+INTC_SEL16,9C,32,r,00000020,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL17  Interrupt Source Select Register17
+INTC_SEL17,A0,32,r,00000021,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL18  Interrupt Source Select Register18
+INTC_SEL18,A4,32,r,00000022,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL19  Interrupt Source Select Register19
+INTC_SEL19,A8,32,r,00000023,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL20  Interrupt Source Select Register20
+INTC_SEL20,AC,32,r,00000028,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL21  Interrupt Source Select Register21
+INTC_SEL21,B0,32,r,00000029,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL22  Interrupt Source Select Register22
+INTC_SEL22,B4,32,r,0000002A,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL23  Interrupt Source Select Register23
+INTC_SEL23,B8,32,r,0000002B,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL24  Interrupt Source Select Register24
+INTC_SEL24,BC,32,r,00000030,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL25  Interrupt Source Select Register25
+INTC_SEL25,C0,32,r,00000032,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL26  Interrupt Source Select Register26
+INTC_SEL26,C4,32,r,00000033,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL27  Interrupt Source Select Register27
+INTC_SEL27,C8,32,r,00000034,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL28  Interrupt Source Select Register28
+INTC_SEL28,CC,32,r,00000037,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL29  Interrupt Source Select Register29
+INTC_SEL29,D0,32,r,00000040,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL30  Interrupt Source Select Register30
+INTC_SEL30,D4,32,r,00000041,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL31  Interrupt Source Select Register31
+INTC_SEL31,D8,32,r,00000042,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL32  Interrupt Source Select Register32
+INTC_SEL32,DC,32,r,00000043,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL33  Interrupt Source Select Register33
+INTC_SEL33,E0,32,r,00000055,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL34  Interrupt Source Select Register34
+INTC_SEL34,E4,32,r,00000057,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL35  Interrupt Source Select Register35
+INTC_SEL35,E8,32,r,00000100,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL36  Interrupt Source Select Register36
+INTC_SEL36,EC,32,r,00000101,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL37  Interrupt Source Select Register37
+INTC_SEL37,F0,32,r,00000102,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL38  Interrupt Source Select Register38
+INTC_SEL38,F4,32,r,00000103,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL39  Interrupt Source Select Register39
+INTC_SEL39,F8,32,r,00000104,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL40  Interrupt Source Select Register40
+INTC_SEL40,FC,32,r,00000105,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL41  Interrupt Source Select Register41
+INTC_SEL41,100,32,r,00000106,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL42  Interrupt Source Select Register42
+INTC_SEL42,104,32,r,00000107,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL43  Interrupt Source Select Register43
+INTC_SEL43,108,32,r,00000108,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL44  Interrupt Source Select Register44
+INTC_SEL44,10C,32,r,00000109,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL45  Interrupt Source Select Register45
+INTC_SEL45,110,32,r,0000010A,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL46  Interrupt Source Select Register46
+INTC_SEL46,114,32,r,0000010B,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL47  Interrupt Source Select Register47
+INTC_SEL47,118,32,r,00000112,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL48  Interrupt Source Select Register48
+INTC_SEL48,11C,32,r,00000113,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL49  Interrupt Source Select Register49
+INTC_SEL49,120,32,r,00000114,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL50  Interrupt Source Select Register50
+INTC_SEL50,124,32,r,00000116,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL51  Interrupt Source Select Register51
+INTC_SEL51,128,32,r,00000117,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL52  Interrupt Source Select Register52
+INTC_SEL52,12C,32,r,00000118,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL53  Interrupt Source Select Register53
+INTC_SEL53,130,32,r,00000119,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL54  Interrupt Source Select Register54
+INTC_SEL54,134,32,r,0000011B,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL55  Interrupt Source Select Register55
+INTC_SEL55,138,32,r,0000011C,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL56  Interrupt Source Select Register56
+INTC_SEL56,13C,32,r,0000011D,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL57  Interrupt Source Select Register57
+INTC_SEL57,140,32,r,0000011E,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL58  Interrupt Source Select Register58
+INTC_SEL58,144,32,r,00000120,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL59  Interrupt Source Select Register59
+INTC_SEL59,148,32,r,00000121,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL60  Interrupt Source Select Register60
+INTC_SEL60,14C,32,r,00000122,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL61  Interrupt Source Select Register61
+INTC_SEL61,150,32,r,00000123,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL62  Interrupt Source Select Register62
+INTC_SEL62,154,32,r,00000125,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL63  Interrupt Source Select Register63
+INTC_SEL63,158,32,r,00000126,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL64  Interrupt Source Select Register64
+INTC_SEL64,15C,32,r,00000127,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL65  Interrupt Source Select Register65
+INTC_SEL65,160,32,r,00000128,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL66  Interrupt Source Select Register66
+INTC_SEL66,164,32,r,0000012B,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL67  Interrupt Source Select Register67
+INTC_SEL67,168,32,r,0000012C,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL68  Interrupt Source Select Register68
+INTC_SEL68,16C,32,r,0000012D,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL69  Interrupt Source Select Register69
+INTC_SEL69,170,32,r,0000012E,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL70  Interrupt Source Select Register70
+INTC_SEL70,174,32,r,00000140,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL71  Interrupt Source Select Register71
+INTC_SEL71,178,32,r,00000141,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL72  Interrupt Source Select Register72
+INTC_SEL72,17C,32,r,00000142,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL73  Interrupt Source Select Register73
+INTC_SEL73,180,32,r,00000143,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL74  Interrupt Source Select Register74
+INTC_SEL74,184,32,r,00000144,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL75  Interrupt Source Select Register75
+INTC_SEL75,188,32,r,00000145,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL76  Interrupt Source Select Register76
+INTC_SEL76,18C,32,r,00000146,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL77  Interrupt Source Select Register77
+INTC_SEL77,190,32,r,00000147,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL78  Interrupt Source Select Register78
+INTC_SEL78,194,32,r,00000148,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL79  Interrupt Source Select Register79
+INTC_SEL79,198,32,r,00000149,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL80  Interrupt Source Select Register80
+INTC_SEL80,19C,32,r,0000014A,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL81  Interrupt Source Select Register81
+INTC_SEL81,1A0,32,r,00000186,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL82  Interrupt Source Select Register82
+INTC_SEL82,1A4,32,r,000001A0,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL83  Interrupt Source Select Register83
+INTC_SEL83,1A8,32,r,000001A1,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL84  Interrupt Source Select Register84
+INTC_SEL84,1AC,32,r,000001A2,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL85  Interrupt Source Select Register85
+INTC_SEL85,1B0,32,r,000001A4,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL86  Interrupt Source Select Register86
+INTC_SEL86,1B4,32,r,000001A5,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL87  Interrupt Source Select Register87
+INTC_SEL87,1B8,32,r,000001A6,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL88  Interrupt Source Select Register88
+INTC_SEL88,1BC,32,r,000001A7,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL89  Interrupt Source Select Register89
+INTC_SEL89,1C0,32,r,000001B0,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL90  Interrupt Source Select Register90
+INTC_SEL90,1C4,32,r,000001B1,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL91  Interrupt Source Select Register91
+INTC_SEL91,1C8,32,r,000001B2,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL92  Interrupt Source Select Register92
+INTC_SEL92,1CC,32,r,000001B4,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL93  Interrupt Source Select Register93
+INTC_SEL93,1D0,32,r,000001B5,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL94  Interrupt Source Select Register94
+INTC_SEL94,1D4,32,r,000001B6,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL95  Interrupt Source Select Register95
+INTC_SEL95,1D8,32,r,000001B7,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL96  Interrupt Source Select Register96
+INTC_SEL96,1DC,32,r,000001B8,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL97  Interrupt Source Select Register97
+INTC_SEL97,1E0,32,r,000001C0,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL98  Interrupt Source Select Register98
+INTC_SEL98,1E4,32,r,000001C1,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL99  Interrupt Source Select Register99
+INTC_SEL99,1E8,32,r,000001C2,000001FF,
+ISEL,8,0,r,$,
+
+//INTC_SEL100  Interrupt Source Select Register100
+INTC_SEL100,1EC,32,r,000001C3,000001FF,
+ISEL,8,0,r,$,
+
+//INT_SWIER  Sofeware Interrupt &amp; Event Register
+INTC_SWIER,29C,32,rw,00000000,0000FFFF,
+SWIE15,15,15,rw,
+SWIE14,14,14,rw,
+SWIE13,13,13,rw,
+SWIE12,12,12,rw,
+SWIE11,11,11,rw,
+SWIE10,10,10,rw,
+SWIE9,9,9,rw,
+SWIE8,8,8,rw,
+SWIE7,7,7,rw,
+SWIE6,6,6,rw,
+SWIE5,5,5,rw,
+SWIE4,4,4,rw,
+SWIE3,3,3,rw,
+SWIE2,2,2,rw,
+SWIE1,1,1,rw,
+SWIE0,0,0,rw,$,
+
+//INTC_EVTER  WFE Event Enable Register
+INTC_EVTER,2A0,32,rw,00000000,0000FFFF,
+EVTE15,15,15,rw,
+EVTE14,14,14,rw,
+EVTE13,13,13,rw,
+EVTE12,12,12,rw,
+EVTE11,11,11,rw,
+EVTE10,10,10,rw,
+EVTE9,9,9,rw,
+EVTE8,8,8,rw,
+EVTE7,7,7,rw,
+EVTE6,6,6,rw,
+EVTE5,5,5,rw,
+EVTE4,4,4,rw,
+EVTE3,3,3,rw,
+EVTE2,2,2,rw,
+EVTE1,1,1,rw,
+EVTE0,0,0,rw,$,
+
+//INTC_IER  Interrupt Enable Register
+INTC_IER,2A4,32,rw,FFFFFFFF,0000FFFF,
+IER15,15,15,rw,
+IER14,14,14,rw,
+IER13,13,13,rw,
+IER12,12,12,rw,
+IER11,11,11,rw,
+IER10,10,10,rw,
+IER9,9,9,rw,
+IER8,8,8,rw,
+IER7,7,7,rw,
+IER6,6,6,rw,
+IER5,5,5,rw,
+IER4,4,4,rw,
+IER3,3,3,rw,
+IER2,2,2,rw,
+IER1,1,1,rw,
+IER0,0,0,rw,$,
+

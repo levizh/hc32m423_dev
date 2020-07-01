@@ -1,0 +1,13 @@
+//SWDT
+SWDT,40049400,4,4,8,4,
+
+//SWDT_SR  SWDT State Register
+SWDT_SR,4,32,r,00000000,0003FFFF,
+REF,17,17,rw,
+UDF,16,16,rw,
+CNT,15,0,r,$,
+
+//SWDT_RR  SWDT Refresh Register
+SWDT_RR,8,32,r,00000000,0000FFFF,
+RF,15,0,r,$,
+

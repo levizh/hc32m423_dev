@@ -1,0 +1,1434 @@
+//PORT
+GPIO,40053800,0,1,1,1,2,1,3,1,4,1,5,1,7,1,9,1,A,1,B,1,D,1,E,1,10,1,11,1,12,1,13,1,14,1,15,1,17,1,19,1,1A,1,1B,1,1D,1,1E,1,20,1,21,1,22,1,23,1,24,1,25,1,27,1,29,1,2A,1,2B,1,2D,1,2E,1,300,2,304,2,306,2,308,2,30,1,31,1,32,1,33,1,34,1,35,1,37,1,39,1,3A,1,3B,1,3D,1,3E,1,400,2,402,2,404,2,406,2,408,2,40A,2,40,1,41,1,420,2,422,2,424,2,426,2,42,1,43,1,448,2,44A,2,44C,2,44E,2,44,1,450,2,452,2,45,1,460,2,462,2,464,2,466,2,468,2,46A,2,46C,2,46E,2,478,2,47A,2,47C,2,47E,2,47,1,480,2,482,2,484,2,486,2,488,2,48A,2,48C,2,48E,2,490,2,492,2,494,2,496,2,498,2,49A,2,49C,2,49E,2,49,1,4A0,2,4A2,2,4A,1,4B,1,4D,1,4E0,2,4E2,2,4E4,2,4E6,2,4E8,2,4EA,2,4EC,2,4EE,2,4E,1,4F0,2,4F2,2,4F4,2,4F6,2,4F8,2,4FA,2,50,1,51,1,524,2,526,2,528,2,52A,2,52C,2,52E,2,52,1,530,2,532,2,53,1,548,2,54A,2,54C,2,54E,2,54,1,550,2,552,2,554,2,556,2,55,1,560,2,562,2,564,2,566,2,568,2,56A,2,56C,2,56E,2,570,2,572,2,574,2,576,2,578,2,57A,2,57C,2,57E,2,57,1,59,1,5AC,2,5AE,2,5A,1,5B0,2,5B2,2,5B4,2,5B6,2,5B8,2,5BA,2,5BC,2,5BE,2,5B,1,5C8,2,5CA,2,5D,1,5E,1,
+
+//GPIO_PIDR0  Port 0 Input Data Register
+GPIO_PIDR0,0,8,r,00,07,
+PIN2,2,2,r,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR1  Port 1 Input Data Register
+GPIO_PIDR1,1,8,r,00,03,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR2  Port 2 Input Data Register
+GPIO_PIDR2,2,8,r,00,1C,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,$,
+
+//GPIO_PIDR3  Port 3 Input Data Register
+GPIO_PIDR3,3,8,r,00,CF,
+PIN7,7,7,r,
+PIN6,6,6,r,
+PIN3,3,3,r,
+PIN2,2,2,r,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR4  Port 4 Input Data Register
+GPIO_PIDR4,4,8,r,00,FF,
+PIN7,7,7,r,
+PIN6,6,6,r,
+PIN5,5,5,r,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR5  Port 5 Input Data Register
+GPIO_PIDR5,5,8,r,00,01,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR7  Port 7 Input Data Register
+GPIO_PIDR7,7,8,r,00,7F,
+PIN6,6,6,r,
+PIN5,5,5,r,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDR9  Port 9 Input Data Register
+GPIO_PIDR9,9,8,r,00,1E,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,
+PIN1,1,1,r,$,
+
+//GPIO_PIDRA  Port A Input Data Register
+GPIO_PIDRA,A,8,r,00,3C,
+PIN5,5,5,r,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,$,
+
+//GPIO_PIDRB  Port B Input Data Register
+GPIO_PIDRB,B,8,r,00,FF,
+PIN7,7,7,r,
+PIN6,6,6,r,
+PIN5,5,5,r,
+PIN4,4,4,r,
+PIN3,3,3,r,
+PIN2,2,2,r,
+PIN1,1,1,r,
+PIN0,0,0,r,$,
+
+//GPIO_PIDRD  Port D Input Data Register
+GPIO_PIDRD,D,8,r,00,F8,
+PIN7,7,7,r,
+PIN6,6,6,r,
+PIN5,5,5,r,
+PIN4,4,4,r,
+PIN3,3,3,r,$,
+
+//GPIO_PIDRE  Port E Input Data Register
+GPIO_PIDRE,E,8,r,00,04,
+PIN2,2,2,r,$,
+
+//GPIO_PODR0  Port 0 Output Data Register
+GPIO_PODR0,10,8,rw,00,07,
+POUT2,2,2,rw,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR1  Port 1 Output Data Register
+GPIO_PODR1,11,8,rw,00,03,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR2  Port 2 Output Data Register
+GPIO_PODR2,12,8,rw,00,1C,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,$,
+
+//GPIO_PODR3  Port 3 Output Data Register
+GPIO_PODR3,13,8,rw,00,CF,
+POUT7,7,7,rw,
+POUT6,6,6,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR4  Port 4 Output Data Register
+GPIO_PODR4,14,8,rw,00,FF,
+POUT7,7,7,rw,
+POUT6,6,6,rw,
+POUT5,5,5,rw,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR5  Port 5 Output Data Register
+GPIO_PODR5,15,8,rw,00,01,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR7  Port 7 Output Data Register
+GPIO_PODR7,17,8,rw,00,7F,
+POUT6,6,6,rw,
+POUT5,5,5,rw,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODR9  Port 9 Output Data Register
+GPIO_PODR9,19,8,rw,00,1E,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,
+POUT1,1,1,rw,$,
+
+//GPIO_PODRA  Port A Output Data Register
+GPIO_PODRA,1A,8,rw,00,3C,
+POUT5,5,5,rw,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,$,
+
+//GPIO_PODRB  Port B Output Data Register
+GPIO_PODRB,1B,8,rw,00,FF,
+POUT7,7,7,rw,
+POUT6,6,6,rw,
+POUT5,5,5,rw,
+POUT4,4,4,rw,
+POUT3,3,3,rw,
+POUT2,2,2,rw,
+POUT1,1,1,rw,
+POUT0,0,0,rw,$,
+
+//GPIO_PODRD  Port D Output Data Register
+GPIO_PODRD,1D,8,rw,00,F8,
+POUT7,7,7,rw,
+POUT6,6,6,rw,
+POUT5,5,5,rw,
+POUT4,4,4,rw,
+POUT3,3,3,rw,$,
+
+//GPIO_PODRE  Port E Output Data Register
+GPIO_PODRE,1E,8,rw,00,04,
+POUT2,2,2,rw,$,
+
+//GPIO_POER0  Port 0 Output Enable Register
+GPIO_POER0,20,8,rw,00,07,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER1  Port 1 Output Enable Register
+GPIO_POER1,21,8,rw,00,03,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER2  Port 2 Output Enable Register
+GPIO_POER2,22,8,rw,00,1C,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,$,
+
+//GPIO_POER3  Port 3 Output Enable Register
+GPIO_POER3,23,8,rw,00,CF,
+POUTE7,7,7,rw,
+POUTE6,6,6,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER4  Port 4 Output Enable Register
+GPIO_POER4,24,8,rw,00,FF,
+POUTE7,7,7,rw,
+POUTE6,6,6,rw,
+POUTE5,5,5,rw,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER5  Port 5 Output Enable Register
+GPIO_POER5,25,8,rw,00,01,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER7  Port 7 Output Enable Register
+GPIO_POER7,27,8,rw,00,7F,
+POUTE6,6,6,rw,
+POUTE5,5,5,rw,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POER9  Port 9 Output Enable Register
+GPIO_POER9,29,8,rw,00,1E,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,$,
+
+//GPIO_POERA  Port A Output Enable Register
+GPIO_POERA,2A,8,rw,00,3C,
+POUTE5,5,5,rw,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,$,
+
+//GPIO_POERB  Port B Output Enable Register
+GPIO_POERB,2B,8,rw,00,FF,
+POUTE7,7,7,rw,
+POUTE6,6,6,rw,
+POUTE5,5,5,rw,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,
+POUTE2,2,2,rw,
+POUTE1,1,1,rw,
+POUTE0,0,0,rw,$,
+
+//GPIO_POERD  Port D Output Enable Register
+GPIO_POERD,2D,8,rw,00,F8,
+POUTE7,7,7,rw,
+POUTE6,6,6,rw,
+POUTE5,5,5,rw,
+POUTE4,4,4,rw,
+POUTE3,3,3,rw,$,
+
+//GPIO_POERE  Port E Output Enable Register
+GPIO_POERE,2E,8,rw,00,04,
+POUTE2,2,2,rw,$,
+
+//GPIO_POSR0  Port 0 Output Data Set Register
+GPIO_POSR0,30,8,w,00,07,
+POS2,2,2,w,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSR1  Port 1 Output Data Set Register
+GPIO_POSR1,31,8,w,00,03,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSR2  Port 2 Output Data Set Register
+GPIO_POSR2,32,8,w,00,1C,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,$,
+
+//GPIO_POSR3  Port 3 Output Data Set Register
+GPIO_POSR3,33,8,w,00,CF,
+POS7,7,7,w,
+POS6,6,6,w,
+POS3,3,3,w,
+POS2,2,2,w,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSR4  Port 4 Output Data Set Register
+GPIO_POSR4,34,8,w,00,FF,
+POS7,7,7,w,
+POS6,6,6,w,
+POS5,5,5,w,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSR5  Port 5 Output Data Set Register
+GPIO_POSR5,35,8,w,00,01,
+POS0,0,0,w,$,
+
+//GPIO_POSR7  Port 7 Output Data Set Register
+GPIO_POSR7,37,8,w,00,7F,
+POS6,6,6,w,
+POS5,5,5,w,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSR9  Port 9 Output Data Set Register
+GPIO_POSR9,39,8,w,00,1E,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,
+POS1,1,1,w,$,
+
+//GPIO_POSRA  Port A Output Data Set Register
+GPIO_POSRA,3A,8,w,00,3C,
+POS5,5,5,w,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,$,
+
+//GPIO_POSRB  Port B Output Data Set Register
+GPIO_POSRB,3B,8,w,00,FF,
+POS7,7,7,w,
+POS6,6,6,w,
+POS5,5,5,w,
+POS4,4,4,w,
+POS3,3,3,w,
+POS2,2,2,w,
+POS1,1,1,w,
+POS0,0,0,w,$,
+
+//GPIO_POSRD  Port D Output Data Set Register
+GPIO_POSRD,3D,8,w,00,F8,
+POS7,7,7,w,
+POS6,6,6,w,
+POS5,5,5,w,
+POS4,4,4,w,
+POS3,3,3,w,$,
+
+//GPIO_POSRE  Port E Output Data Set Register
+GPIO_POSRE,3E,8,w,00,04,
+POS2,2,2,w,$,
+
+//GPIO_PORR0  Port 0 Output Data Reset Register
+GPIO_PORR0,40,8,w,00,07,
+POR2,2,2,w,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORR1  Port 1 Output Data Reset Register
+GPIO_PORR1,41,8,w,00,03,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORR2  Port 2 Output Data Reset Register
+GPIO_PORR2,42,8,w,00,1C,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,$,
+
+//GPIO_PORR3  Port 3 Output Data Reset Register
+GPIO_PORR3,43,8,w,00,CF,
+POR7,7,7,w,
+POR6,6,6,w,
+POR3,3,3,w,
+POR2,2,2,w,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORR4  Port 4 Output Data Reset Register
+GPIO_PORR4,44,8,w,00,FF,
+POR7,7,7,w,
+POR6,6,6,w,
+POR5,5,5,w,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORR5  Port 5 Output Data Reset Register
+GPIO_PORR5,45,8,w,00,01,
+POR0,0,0,w,$,
+
+//GPIO_PORR7  Port 7 Output Data Reset Register
+GPIO_PORR7,47,8,w,00,7F,
+POR6,6,6,w,
+POR5,5,5,w,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORR9  Port 9 Output Data Reset Register
+GPIO_PORR9,49,8,w,00,1E,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,
+POR1,1,1,w,$,
+
+//GPIO_PORRA  Port A Output Data Reset Register
+GPIO_PORRA,4A,8,w,00,3C,
+POR5,5,5,w,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,$,
+
+//GPIO_PORRB  Port B Output Data Reset Register
+GPIO_PORRB,4B,8,w,00,FF,
+POR7,7,7,w,
+POR6,6,6,w,
+POR5,5,5,w,
+POR4,4,4,w,
+POR3,3,3,w,
+POR2,2,2,w,
+POR1,1,1,w,
+POR0,0,0,w,$,
+
+//GPIO_PORRD  Port D Output Data Reset Register
+GPIO_PORRD,4D,8,w,00,F8,
+POR7,7,7,w,
+POR6,6,6,w,
+POR5,5,5,w,
+POR4,4,4,w,
+POR3,3,3,w,$,
+
+//GPIO_PORRE  Port E Output Data Reset Register
+GPIO_PORRE,4E,8,w,00,04,
+POR2,2,2,w,$,
+
+//GPIO_POTR0  Port 0 Output Data Toggle Register
+GPIO_POTR0,50,8,w,00,07,
+POT2,2,2,w,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTR1  Port 1 Output Data Toggle Register
+GPIO_POTR1,51,8,w,00,03,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTR2  Port 2 Output Data Toggle Register
+GPIO_POTR2,52,8,w,00,1C,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,$,
+
+//GPIO_POTR3  Port 3 Output Data Toggle Register
+GPIO_POTR3,53,8,w,00,CF,
+POT7,7,7,w,
+POT6,6,6,w,
+POT3,3,3,w,
+POT2,2,2,w,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTR4  Port 4 Output Data Toggle Register
+GPIO_POTR4,54,8,w,00,FF,
+POT7,7,7,w,
+POT6,6,6,w,
+POT5,5,5,w,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTR5  Port 5 Output Data Toggle Register
+GPIO_POTR5,55,8,w,00,01,
+POT0,0,0,w,$,
+
+//GPIO_POTR7  Port 7 Output Data Toggle Register
+GPIO_POTR7,57,8,w,00,7F,
+POT6,6,6,w,
+POT5,5,5,w,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTR9  Port 9 Output Data Toggle Register
+GPIO_POTR9,59,8,w,00,1E,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,
+POT1,1,1,w,$,
+
+//GPIO_POTRA  Port A Output Data Toggle Register
+GPIO_POTRA,5A,8,w,00,3C,
+POT5,5,5,w,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,$,
+
+//GPIO_POTRB  Port B Output Data Toggle Register
+GPIO_POTRB,5B,8,w,00,FF,
+POT7,7,7,w,
+POT6,6,6,w,
+POT5,5,5,w,
+POT4,4,4,w,
+POT3,3,3,w,
+POT2,2,2,w,
+POT1,1,1,w,
+POT0,0,0,w,$,
+
+//GPIO_POTRD  Port D Output Data Toggle Register
+GPIO_POTRD,5D,8,w,00,F8,
+POT7,7,7,w,
+POT6,6,6,w,
+POT5,5,5,w,
+POT4,4,4,w,
+POT3,3,3,w,$,
+
+//GPIO_POTRE  Port E Output Data Toggle Register
+GPIO_POTRE,5E,8,w,00,04,
+POT2,2,2,w,$,
+
+//GPIO_PSPCR  Port Special Function Control Register
+GPIO_PSPCR,300,16,rw,001F,001F,
+SPFE,4,0,rw,$,
+
+//PCCR  Port Common Control Register
+GPIO_PCCR,304,16,rw,4000,C000,
+RDWT,15,14,rw,$,
+
+//PINAER  Port Input Always Enable Register
+GPIO_PINAER,306,16,rw,0000,6EBF,
+PINAE14,14,14,rw,
+PINAE13,13,13,rw,
+PINAE11,11,11,rw,
+PINAE10,10,10,rw,
+PINAE9,9,9,rw,
+PINAE7,7,7,rw,
+PINAE5,5,5,rw,
+PINAE4,4,4,rw,
+PINAE3,3,3,rw,
+PINAE2,2,2,rw,
+PINAE1,1,1,rw,
+PINAE0,0,0,rw,$,
+
+//PWPR  Port Register Write Protect Register
+GPIO_PWPR,308,16,rw,0000,FF01,
+WP,15,8,w,
+WE,0,0,rw,$,
+
+//GPIO_PCR00  Port P00 Control Register
+GPIO_PCR00,400,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR00  Port P00 Function Select Register
+GPIO_PFSR00,402,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR01  Port P01 Control Register
+GPIO_PCR01,404,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR01  Port P01 Function Select Register
+GPIO_PFSR01,406,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR02  Port P02 Control Register
+GPIO_PCR02,408,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR02  Port P02 Function Select Register
+GPIO_PFSR02,40A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR10  Port P10 Control Register
+GPIO_PCR10,420,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR10  Port P10 Function Select Register
+GPIO_PFSR10,422,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR11  Port P11 Control Register
+GPIO_PCR11,424,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR11  Port P11 Function Select Register
+GPIO_PFSR11,426,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR22  Port P22 Control Register
+GPIO_PCR22,448,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR22  Port P22 Function Select Register
+GPIO_PFSR22,44A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR23  Port P23 Control Register
+GPIO_PCR23,44C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR23  Port P23 Function Select Register
+GPIO_PFSR23,44E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR24  Port P24 Control Register
+GPIO_PCR24,450,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR24  Port P24 Function Select Register
+GPIO_PFSR24,452,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+
+
+//GPIO_PCR30  Port P30 Control Register
+GPIO_PCR30,460,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR30  Port P30 Function Select Register
+GPIO_PFSR30,462,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR31  Port P31 Control Register
+GPIO_PCR31,464,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR31  Port P31 Function Select Register
+GPIO_PFSR31,466,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR32  Port P32 Control Register
+GPIO_PCR32,468,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR32  Port P32 Function Select Register
+GPIO_PFSR32,46A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR33  Port P33 Control Register
+GPIO_PCR33,46C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR33  Port P33 Function Select Register
+GPIO_PFSR33,46E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR36  Port P36 Control Register
+GPIO_PCR36,478,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR36  Port P36 Function Select Register
+GPIO_PFSR36,47A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR37  Port P37 Control Register
+GPIO_PCR37,47C,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR37  Port P37 Function Select Register
+GPIO_PFSR37,47E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+
+
+//GPIO_PCR40  Port P40 Control Register
+GPIO_PCR40,480,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR40  Port P40 Function Select Register
+GPIO_PFSR40,482,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR41  Port P41 Control Register
+GPIO_PCR41,484,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR41  Port P41 Function Select Register
+GPIO_PFSR41,486,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR42  Port P42 Control Register
+GPIO_PCR42,488,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR42  Port P42 Function Select Register
+GPIO_PFSR42,48A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR43  Port P43 Control Register
+GPIO_PCR43,48C,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR43  Port P43 Function Select Register
+GPIO_PFSR43,48E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR44  Port P44 Control Register
+GPIO_PCR44,490,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR44  Port P44 Function Select Register
+GPIO_PFSR44,492,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR45  Port P45 Control Register
+GPIO_PCR45,494,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR45  Port P45 Function Select Register
+GPIO_PFSR45,496,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR46  Port P46 Control Register
+GPIO_PCR46,498,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR46  Port P46 Function Select Register
+GPIO_PFSR46,49A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR47  Port P47 Control Register
+GPIO_PCR47,49C,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR47  Port P47 Function Select Register
+GPIO_PFSR47,49E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR50  Port P50 Control Register
+GPIO_PCR50,4A0,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR50  Port P50 Function Select Register
+GPIO_PFSR50,4A2,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR70  Port P70 Control Register
+GPIO_PCR70,4E0,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR70  Port P70 Function Select Register
+GPIO_PFSR70,4E2,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR71  Port P71 Control Register
+GPIO_PCR71,4E4,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR71  Port P71 Function Select Register
+GPIO_PFSR71,4E6,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR72  Port P72 Control Register
+GPIO_PCR72,4E8,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR72  Port P72 Function Select Register
+GPIO_PFSR72,4EA,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR73  Port P73 Control Register
+GPIO_PCR73,4EC,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR73  Port P73 Function Select Register
+GPIO_PFSR73,4EE,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR74  Port P74 Control Register
+GPIO_PCR74,4F0,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR74  Port P74 Function Select Register
+GPIO_PFSR74,4F2,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR75  Port P75 Control Register
+GPIO_PCR75,4F4,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR75  Port P75 Function Select Register
+GPIO_PFSR75,4F6,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR76  Port P76 Control Register
+GPIO_PCR76,4F8,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR76  Port P76 Function Select Register
+GPIO_PFSR76,4FA,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR91  Port P91 Control Register
+GPIO_PCR91,524,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR91  Port P91 Function Select Register
+GPIO_PFSR91,526,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR92  Port P92 Control Register
+GPIO_PCR92,528,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR92  Port P92 Function Select Register
+GPIO_PFSR92,52A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR93  Port P93 Control Register
+GPIO_PCR93,52C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR93  Port P93 Function Select Register
+GPIO_PFSR93,52E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCR94  Port P94 Control Register
+GPIO_PCR94,530,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSR94  Port P94 Function Select Register
+GPIO_PFSR94,532,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRA2  Port PA2 Control Register
+GPIO_PCRA2,548,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRA2  Port PA2 Function Select Register
+GPIO_PFSRA2,54A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRA3  Port PA3 Control Register
+GPIO_PCRA3,54C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRA3  Port PA3 Function Select Register
+GPIO_PFSRA3,54E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRA4  Port PA4 Control Register
+GPIO_PCRA4,550,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRA4  Port PA4 Function Select Register
+GPIO_PFSRA4,552,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRA5  Port PA5 Control Register
+GPIO_PCRA5,554,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRA5  Port PA5 Function Select Register
+GPIO_PFSRA5,556,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB0  Port PB0 Control Register
+GPIO_PCRB0,560,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB0  Port PB0 Function Select Register
+GPIO_PFSRB0,562,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB1  Port PB1 Control Register
+GPIO_PCRB1,564,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB1  Port PB1 Function Select Register
+GPIO_PFSRB1,566,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB2  Port PB2 Control Register
+GPIO_PCRB2,568,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB2  Port PB2 Function Select Register
+GPIO_PFSRB2,56A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB3  Port PB3 Control Register
+GPIO_PCRB3,56C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB3  Port PB3 Function Select Register
+GPIO_PFSRB3,56E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB4  Port PB4 Control Register
+GPIO_PCRB4,570,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB4  Port PB4 Function Select Register
+GPIO_PFSRB4,572,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB5  Port PB5 Control Register
+GPIO_PCRB5,574,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB5  Port PB5 Function Select Register
+GPIO_PFSRB5,576,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB6  Port PB6 Control Register
+GPIO_PCRB6,578,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB6  Port PB6 Function Select Register
+GPIO_PFSRB6,57A,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRB7  Port PB7 Control Register
+GPIO_PCRB7,57C,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRB7  Port PB7 Function Select Register
+GPIO_PFSRB7,57E,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRD3  Port PD3 Control Register
+GPIO_PCRD3,5AC,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRD3  Port PD3 Function Select Register
+GPIO_PFSRD3,5AE,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRD4  Port PD4 Control Register
+GPIO_PCRD4,5B0,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRD4  Port PD4 Function Select Register
+GPIO_PFSRD4,5B2,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRD5  Port PD5 Control Register
+GPIO_PCRD5,5B4,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRD5  Port PD5 Function Select Register
+GPIO_PFSRD5,5B6,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRD6  Port PD6 Control Register
+GPIO_PCRD6,5B8,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRD6  Port PD6 Function Select Register
+GPIO_PFSRD6,5BA,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRD7  Port PD7 Control Register
+GPIO_PCRD7,5BC,16,rw,0000,0F77,
+INTE,11,11,rw,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRD7  Port PD7 Function Select Register
+GPIO_PFSRD7,5BE,16,rw,0000,0007,
+FSEL,2,0,rw,$,
+
+//GPIO_PCRE2  Port PE2 Control Register
+GPIO_PCRE2,5C8,16,rw,0000,0777,
+CINSEL,10,10,rw,
+INVE,9,9,rw,
+PIN,8,8,r,
+PUU,6,6,rw,
+LTE,5,5,rw,
+DRV,4,4,rw,
+NOD,2,2,rw,
+POUTE,1,1,rw,
+POUT,0,0,rw,$,
+
+//GPIO_PFSRE2  Port PE2 Function Select Register
+GPIO_PFSRE2,5CA,16,rw,0000,0007,
+FSEL,2,0,rw,$,

@@ -1,0 +1,58 @@
+//USART3
+USART3,40021000,0,4,10,4,14,4,18,4,4,4,8,4,c,4,
+
+//USART3_SR  USART Status Register
+USART3_SR,0,32,r,000000C0,000100EB,
+MPB,16,16,r,
+TXE,7,7,r,
+TC,6,6,r,
+RXNE,5,5,r,
+ORE,3,3,r,
+FE,1,1,r,
+PE,0,0,r,$,
+
+//USART3_CR2  USART Control Register 2
+USART3_CR2,10,32,rw,00000000,00003801,
+STOP,13,13,rw,
+CLKC,12,11,rw,
+MPE,0,0,rw,$,
+
+//USART3_CR3  USART Control Register 3
+USART3_CR3,14,32,rw,00000000,00000208,
+CTSE,9,9,rw,
+HDSEL,3,3,rw,$,
+
+//USART3_PR  USART prescaler register
+USART3_PR,18,32,rw,00000000,00000003,
+PSC,1,0,rw,$,
+
+//USART3_DR  USART Data Register
+USART3_DR,4,32,rw,000001FF,01FF03FF,
+RDR,24,16,rw,
+MPID,9,9,rw,
+TDR,8,0,rw,$,
+
+//USART3_BRR  USART Baud Rate Register
+USART3_BRR,8,32,rw,0000FF00,0000FF00,
+DIV_Integer,15,8,rw,$,
+
+//USART3_CR1  USART Control Register 1
+USART3_CR1,c,32,rw,80000000,D10B96FC,
+SBS,31,31,rw,
+NFE,30,30,rw,
+ML,28,28,rw,
+MS,24,24,rw,
+CORE,19,19,w,
+CFE,17,17,w,
+CPE,16,16,w,
+OVER8,15,15,rw,
+M,12,12,rw,
+PCE,10,10,rw,
+PS,9,9,rw,
+TXEIE,7,7,rw,
+TCIE,6,6,rw,
+RIE,5,5,rw,
+SLME,4,4,rw,
+TE,3,3,rw,
+RE,2,2,rw,$,
+

@@ -1,0 +1,125 @@
+//ADC
+ADC,40030000,0,1,2,2,4,2,A,2,C,2,10,2,14,2,18,1,1a,2,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,44,1,45,1,46,1,50,2,52,2,54,2,56,2,58,2,5A,2,5C,2,5E,2,60,2,62,2,
+
+//ADC_STR  ADC Start Register
+ADC_STR,0,8,rw,00,01,
+STRT,0,0,rw,$,
+
+//ADC_CR0  ADC Control Register 0
+ADC_CR0,2,16,rw,0000,07F3,
+AVCNT,10,8,rw,
+DFMT,7,7,rw,
+CLREN,6,6,rw,
+ACCSEL,5,4,rw,
+MS,1,0,rw,$,
+
+//ADC_CR1  ADC Control Register 1
+ADC_CR1,4,16,rw,0000,0004,
+RSCHSEL,2,2,rw,$,
+
+//ADC_TRGSR  ADC Trigger Select Register
+ADC_TRGSR,A,16,rw,0000,8383,
+TRGENB,15,15,rw,
+TRGSELB,9,8,rw,
+TRGENA,7,7,rw,
+TRGSELA,1,0,rw,$,
+
+//ADC_CHSELRA0  ADC Sequence A Channel Select Register0
+ADC_CHSELRA0,C,16,rw,0000,03FF,
+CHSELA,9,0,rw,$,
+
+//ADC_CHSELRB0  ADC Sequence B Channel Select Register0
+ADC_CHSELRB0,10,16,rw,0000,03FF,
+CHSELB,9,0,rw,$,
+
+//ADC_AVCHSELR0  ADC Average Channel Select Register0
+ADC_AVCHSELR0,14,16,rw,0000,03FF,
+AVCHSEL,9,0,rw,$,
+
+//ADC_EXCHSELR  ADC Extended Channel Select Register
+ADC_EXCHSELR,18,8,rw,00,01,
+EXCHSEL,0,0,rw,$,
+
+//ADC_SHCR  ADC Sample Hold Control Register
+ADC_SHCR,1a,16,rw,0000,87FF,
+SHMD,15,15,rw,
+SHSEL,10,8,rw,
+SHT,7,0,rw,$,
+
+//ADC_SSTR0  ADC Channel 0 Sampling Time Register
+ADC_SSTR0,20,8,rw,0B,FF,$,
+
+//ADC_SSTR1  ADC Channel 1 Sampling Time Register
+ADC_SSTR1,21,8,rw,0B,FF,$,
+
+//ADC_SSTR2  ADC Channel 2 Sampling Time Register
+ADC_SSTR2,22,8,rw,0B,FF,$,
+
+//ADC_SSTR3  ADC Channel 3 Sampling Time Register
+ADC_SSTR3,23,8,rw,0B,FF,$,
+
+//ADC_SSTR4  ADC Channel 4 Sampling Time Register
+ADC_SSTR4,24,8,rw,0B,FF,$,
+
+//ADC_SSTR5  ADC Channel 5 Sampling Time Register
+ADC_SSTR5,25,8,rw,0B,FF,$,
+
+//ADC_SSTR6  ADC Channel 6 Sampling Time Register
+ADC_SSTR6,26,8,rw,0B,FF,$,
+
+//ADC_SSTR7  ADC Channel 7 Sampling Time Register
+ADC_SSTR7,27,8,rw,0B,FF,$,
+
+//ADC_SSTR8  ADC Channel 8 Sampling Time Register
+ADC_SSTR8,28,8,rw,0B,FF,$,
+
+//ADC_SSTR9  ADC Channel 9 Sampling Time Register
+ADC_SSTR9,29,8,rw,0B,FF,$,
+
+//ADC_ISR  ADC Interrup Flag Register
+ADC_ISR,44,8,r,00,13,
+SASTPDF,4,4,r,
+EOCBF,1,1,r,
+EOCAF,0,0,r,$,
+
+//ADC_ICR  ADC Interrup Enable Register
+ADC_ICR,45,8,rw,03,03,
+EOCBIEN,1,1,rw,
+EOCAIEN,0,0,rw,$,
+
+//ADC_ISCLRR  ADC Interrup Flag Clear Register
+ADC_ISCLRR,46,8,w,00,13,
+CLRSASTPDF,4,4,w,
+CLREOCBF,1,1,w,
+CLREOCAF,0,0,w,$,
+
+//ADC_DR0  ADC Channel 0 Convert Data Register
+ADC_DR0,50,16,r,0000,FFFF,$,
+
+//ADC_DR1  ADC Channel 1 Convert Data Register
+ADC_DR1,52,16,r,0000,FFFF,$,
+
+//ADC_DR2  ADC Channel 2 Convert Data Register
+ADC_DR2,54,16,r,0000,FFFF,$,
+
+//ADC_DR3  ADC Channel 3 Convert Data Register
+ADC_DR3,56,16,r,0000,FFFF,$,
+
+//ADC_DR4  ADC Channel 4 Convert Data Register
+ADC_DR4,58,16,r,0000,FFFF,$,
+
+//ADC_DR5  ADC Channel 5 Convert Data Register
+ADC_DR5,5A,16,r,0000,FFFF,$,
+
+//ADC_DR6  ADC Channel 6 Convert Data Register
+ADC_DR6,5C,16,r,0000,FFFF,$,
+
+//ADC_DR7  ADC Channel 7 Convert Data Register
+ADC_DR7,5E,16,r,0000,FFFF,$,
+
+//ADC_DR8  ADC Channel 8 Convert Data Register
+ADC_DR8,60,16,r,0000,FFFF,$,
+
+//ADC_DR9  ADC Channel 9 Convert Data Register
+ADC_DR9,62,16,r,0000,FFFF,$,
+

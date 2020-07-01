@@ -1,0 +1,278 @@
+//TMR4
+TMR4,40017000,2,2,6,2,A,2,E,2,12,2,16,2,18,2,1A,2,1C,2,1E,2,20,2,22,2,24,2,28,4,2C,2,30,4,34,2,38,4,42,2,46,2,48,2,4A,2,82,2,84,2,86,2,8A,2,8C,2,8E,2,92,2,94,2,96,2,98,2,9C,2,A0,2,A4,2,B2,2,B6,2,BA,2,BE,2,C2,2,C6,2,C8,2,CA,2,CC,2,CE,2,D0,2,D2,2,D4,2,D6,2,D8,2,DA,2,DC,2,DE,2,E0,4,E4,2,
+
+//TMR4_OCCRuh  General Compare Value UH Register
+TMR4_OCCRuh,2,16,rw,0000,FFFF,$,
+
+//TMR4_OCCRul  General Compare Value UL Register
+TMR4_OCCRul,6,16,rw,0000,FFFF,$,
+
+//TMR4_OCCRvh  General Compare Value VH Register
+TMR4_OCCRvh,A,16,rw,0000,FFFF,$,
+
+//TMR4_OCCRvl  General Compare Value VL Register
+TMR4_OCCRvl,E,16,rw,0000,FFFF,$,
+
+//TMR4_OCCRwh  General Compare Value WH Register
+TMR4_OCCRwh,12,16,rw,0000,FFFF,$,
+
+//TMR4_OCCRwl  General Compare Value WL Register
+TMR4_OCCRwl,16,16,rw,0000,FFFF,$,
+
+//TMR4_OCSRu  General Control Status U Register
+TMR4_OCSR#U,18,16,rw,FF00,00FF,
+OCFL,7,7,rw,
+OCFH,6,6,rw,
+OCIEL,5,5,rw,
+OCIEH,4,4,rw,
+OCPL,3,3,rw,
+OCPH,2,2,rw,
+OCEL,1,1,rw,
+OCEH,0,0,rw,$,
+
+//TMR4_OCERu  General Expand Control U Register
+TMR4_OCER#U,1A,16,rw,0000,3FFF,
+MCECL,13,13,rw,
+MCECH,12,12,rw,
+LMML,11,11,rw,
+LMMH,10,10,rw,
+LMCL,9,9,rw,
+LMCH,8,8,rw,
+MLBUFEN,7,6,rw,
+MHBUFEN,5,4,rw,
+CLBUFEN,3,2,rw,
+CHBUFEN,1,0,rw,$,
+
+//TMR4_OCSRv  General Control Status V Register
+TMR4_OCSR#V,1C,16,rw,FF00,00FF,/dr,TMR4_OCSR#U,
+
+//TMR4_OCERv  General Expand Control V Register
+TMR4_OCER#V,1E,16,rw,0000,3FFF,/dr,TMR4_OCER#U,
+
+//TMR4_OCSRw  General Control Status W Register
+TMR4_OCSR#W,20,16,rw,FF00,00FF,/dr,TMR4_OCSR#U,
+
+
+//TMR4_OCERw  General Expand Control W Register
+TMR4_OCER#W,22,16,rw,0000,3FFF,/dr,TMR4_OCER#U,
+
+//TMR4_OCMRuh  General Mode Control UH Register
+TMR4_OCMRH#UH,24,16,rw,0000,FFFF,
+OPNZRH,15,14,rw,
+OPNPKH,13,12,rw,
+OPZRH,11,10,rw,
+OPUCH,9,8,rw,
+OPPKH,7,6,rw,
+OPDCH,5,4,rw,
+OCFZRH,3,3,rw,
+OCFUCH,2,2,rw,
+OCFPKH,1,1,rw,
+OCFDCH,0,0,rw,$,
+
+//TMR4_OCMRul  General Mode Control UL Register
+TMR4_OCMRL#UL,28,32,rw,00000000,FFFFFFFF,
+EOPNZRL,31,30,rw,
+EOPNPKL,29,28,rw,
+EOPZRL,27,26,rw,
+EOPUCL,25,24,rw,
+EOPPKL,23,22,rw,
+EOPDCL,21,20,rw,
+EOPNUCL,19,18,rw,
+EOPNDCL,17,16,rw,
+OPNZRL,15,14,rw,
+OPNPKL,13,12,rw,
+OPZRL,11,10,rw,
+OPUCL,9,8,rw,
+OPPKL,7,6,rw,
+OPDCL,5,4,rw,
+OCFZRL,3,3,rw,
+OCFUCL,2,2,rw,
+OCFPKL,1,1,rw,
+OCFDCL,0,0,rw,$,
+
+//TMR4_OCMRvh  General Mode Control VH Register
+TMR4_OCMRH#VH,2C,16,rw,0000,FFFF,/dr,TMR4_OCMRH#UH,
+
+//TMR4_OCMRvl  General Mode Control VL Register
+TMR4_OCMRL#VL,30,32,rw,00000000,FFFFFFFF,/dr,TMR4_OCMRL#UL,
+
+
+//TMR4_OCMRwh  General Mode Control WH Register
+TMR4_OCMRH#WH,34,16,rw,0000,FFFF,/dr,TMR4_OCMRH#UH,
+
+//TMR4_OCMRwl  General Mode Control WL Register
+TMR4_OCMRL#WL,38,32,rw,00000000,FFFFFFFF,/dr,TMR4_OCMRL#UL,
+
+//TMR4_CPSR  Period Value Register
+TMR4_CPSR,42,16,rw,FFFF,FFFF,$,
+
+//TMR4_CNTR  Counter Value Register
+TMR4_CNTR,46,16,rw,0000,FFFF,$,
+
+//TMR4_CCSR  Control Status Register
+TMR4_CCSR,48,16,rw,0040,E3FF,
+ECKEN,15,15,rw,
+IRQZF,14,14,rw,
+IRQZEN,13,13,rw,
+IRQPF,9,9,rw,
+IRQPEN,8,8,rw,
+BUFEN,7,7,rw,
+STOP,6,6,rw,
+MODE,5,5,rw,
+CLEAR,4,4,rw,
+CKDIV,3,0,rw,$,
+
+//TMR4_CVPR  Valid Period Register
+TMR4_CVPR,4A,16,rw,0000,FFFF,
+PIC,15,12,r,
+ZIC,11,8,r,
+PIM,7,4,rw,
+ZIM,3,0,rw,$,
+
+//TMR4_PFSRu  PWM Fliter Control U Register
+TMR4_PFSRu,82,16,rw,0000,FFFF,$,
+
+//TMR4_PDARu  PWM Deadtime Control UA Register
+TMR4_PDARu,84,16,rw,0000,FFFF,$,
+
+//TMR4_PDBRu  PWM Deadtime Control UB Register
+TMR4_PDBRu,86,16,rw,0000,FFFF,$,
+
+//TMR4_PFSRv  PWM Fliter Control V Register
+TMR4_PFSRv,8A,16,rw,0000,FFFF,$,
+
+//TMR4_PDARv  PWM Deadtime Control VA Register
+TMR4_PDARv,8C,16,rw,0000,FFFF,$,
+
+//TMR4_PDBRv  PWM Deadtime Control VB Register
+TMR4_PDBRv,8E,16,rw,0000,FFFF,$,
+
+//TMR4_PFSRw  PWM Fliter Control W Register
+TMR4_PFSRw,92,16,rw,0000,FFFF,$,
+
+//TMR4_PDARw  PWM Deadtime Control WA Register
+TMR4_PDARw,94,16,rw,0000,FFFF,$,
+
+//TMR4_PDBRw  PWM Deadtime Control WB Register
+TMR4_PDBRw,96,16,rw,0000,FFFF,$,
+
+//TMR4_POCRu  PWM Output Control U Register
+TMR4_POCR#U,98,16,rw,FF00,00F7,
+LVLS,7,6,rw,
+PWMMD,5,4,rw,
+DIVCK,2,0,rw,$,
+
+//TMR4_POCRv  PWM Output Control V Register
+TMR4_POCR#V,9C,16,rw,FF00,00F7,/dr,TMR4_POCR#U,
+
+//TMR4_POCRw  PWM Output Control W Register
+TMR4_POCR#W,A0,16,rw,FF00,00F7,/dr,TMR4_POCR#U,
+
+//TMR4_RCSR  Reload Control Status Register
+TMR4_RCSR,A4,16,rw,0000,FFF7,
+RTSW,15,15,rw,
+RTEW,14,14,rw,
+RTICW,13,13,rw,
+RTIFW,12,12,r,
+RTSV,11,11,rw,
+RTEV,10,10,rw,
+RTICV,9,9,rw,
+RTIFV,8,8,r,
+RTSU,7,7,rw,
+RTEU,6,6,rw,
+RTICU,5,5,rw,
+RTIFU,4,4,r,
+RTIDW,2,2,rw,
+RTIDV,1,1,rw,
+RTIDU,0,0,rw,$,
+
+//TMR4_SCCRuh  Special Compare Value UH Register
+TMR4_SCCRuh,B2,16,rw,0000,FFFF,$,
+
+//TMR4_SCCRul  Special Compare Value UL Register
+TMR4_SCCRul,B6,16,rw,0000,FFFF,$,
+
+//TMR4_SCCRvh  Special Compare Value VH Register
+TMR4_SCCRvh,BA,16,rw,0000,FFFF,$,
+
+//TMR4_SCCRvl  Special Compare Value VL Register
+TMR4_SCCRvl,BE,16,rw,0000,FFFF,$,
+
+//TMR4_SCCRwh  Special Compare Value WH Register
+TMR4_SCCRwh,C2,16,rw,0000,FFFF,$,
+
+//TMR4_SCCRwl  Special Compare Value WL Register
+TMR4_SCCRwl,C6,16,rw,0000,FFFF,$,
+
+//TMR4_SCSRuh  Special Control Status UH Register
+TMR4_SCSR#UH,C8,16,rw,0000,F33F,
+ZEN,15,15,rw,
+UEN,14,14,rw,
+PEN,13,13,rw,
+DEN,12,12,rw,
+EVTDS,9,9,rw,
+EVTMS,8,8,rw,
+LMC,5,5,rw,
+EVTOS,4,2,rw,
+BUFEN,1,0,rw,$,
+
+//TMR4_SCMRuh  Special Mode Control UH Register
+TMR4_SCMR#UH,CA,16,rw,FF00,00CF,
+MPCE,7,7,rw,
+MZCE,6,6,rw,
+AMC,3,0,rw,$,
+
+//TMR4_SCSRul  Special Control Status UL Register
+TMR4_SCSR#UL,CC,16,rw,0000,F33F,/dr,TMR4_SCSR#UH,
+
+
+//TMR4_SCMRul  Special Mode Control UL Register
+TMR4_SCMR#UL,CE,16,rw,FF00,00CF,/dr,TMR4_SCMR#UH,
+
+//TMR4_SCSRvh  Special Control Status VH Register
+TMR4_SCSR#VH,D0,16,rw,0000,F33F,/dr,TMR4_SCSR#UH,
+
+//TMR4_SCMRvh  Special Mode Control VH Register
+TMR4_SCMR#VH,D2,16,rw,FF00,00CF,/dr,TMR4_SCMR#UH,
+
+//TMR4_SCSRvl  Special Control Status VL Register
+TMR4_SCSR#VL,D4,16,rw,0000,F33F,/dr,TMR4_SCSR#UH,
+
+//TMR4_SCMRvl  Special Mode Control VL Register
+TMR4_SCMR#VL,D6,16,rw,FF00,00CF,/dr,TMR4_SCMR#UH,
+
+//TMR4_SCSRwh  Special Control Status WH Register
+TMR4_SCSR#WH,D8,16,rw,0000,F33F,/dr,TMR4_SCSR#UH,
+
+//TMR4_SCMRwh  Special Mode Control WH Register
+TMR4_SCMR#WH,DA,16,rw,FF00,00CF,/dr,TMR4_SCMR#UH,
+
+//TMR4_SCSRwl  Special Control Status WL Register
+TMR4_SCSR#WL,DC,16,rw,0000,F33F,/dr,TMR4_SCSR#UH,
+
+//TMR4_SCMRwl  Special Mode Control WL Register
+TMR4_SCMR#WL,DE,16,rw,FF00,00CF,/dr,TMR4_SCMR#UH,
+
+//TMR4_PSCR  PWM Port Status Control Register
+TMR4_PSCR,E0,32,rw,05550000,0FFF03FF,
+OSWL,27,26,rw,
+OSWH,25,24,rw,
+OSVL,23,22,rw,
+OSVH,21,20,rw,
+OSUL,19,18,rw,
+OSUH,17,16,rw,
+AOE,9,9,rw,
+MOE,8,8,rw,
+ODT,7,6,rw,
+OEWL,5,5,rw,
+OEWH,4,4,rw,
+OEVL,3,3,rw,
+OEVH,2,2,rw,
+OEUL,1,1,rw,
+OEUH,0,0,rw,$,
+
+//TMR4_SCER  Special Event Control Register
+TMR4_SCER,E4,16,rw,FF00,000F,
+PCTS,3,3,rw,
+EVTRS,2,0,rw,$,
+

@@ -1,0 +1,101 @@
+//PWC
+PWC,40054000,0,1,4,2,8,1,C,1,100,2,10,4,14,1,20,2,40,2,
+
+//PWC_STPMCR  STOP Mode Control Register
+PWC_STPMCR,0,8,rw,00,CB,
+STOP,7,7,rw,
+STPDAS,6,6,rw,
+HAPORDIS,3,3,rw,
+CKSMRC,1,1,rw,
+FLNWT,0,0,rw,$,
+
+//PWC_PWRC  Power Control Register
+PWC_PWRC,4,16,rw,FFFF,7FFF,
+PLLPWRDY,14,14,rw,
+HRCPWRDY,13,13,rw,
+HDTDIS,12,12,rw,
+PLHDTDIS,11,11,rw,
+HCHDTDIS,10,10,rw,
+VPLLE,9,9,rw,
+VHRCE,8,8,rw,
+DVS,7,7,rw,
+ACTV,6,6,rw,
+PWDRV,5,0,rw,$,
+
+//PWC_MONR  Power Monitor Register
+PWC_PWRMONR,8,8,rw,00,03,
+PWMONE,1,1,rw,
+PWMONSEL,0,0,rw,$,
+
+//PWC_RAMCR  RAM Control Register
+PWC_RAMCR,C,8,rw,10,F0,
+CRPEF,7,7,rw,
+HRPEF,6,6,rw,
+SRPEF,5,5,rw,
+RPERDIS,4,4,rw,$,
+
+//PWC_RSTF0  Reset Flag Register
+PWC_RSTF0,100,16,rw,0000,F5FF,
+CLRF,15,15,rw,
+MULTIRF,14,14,rw,
+XTALERF,13,13,rw,
+CPULKUPRF,12,12,rw,
+RAMPERF,10,10,rw,
+SWRF,8,8,rw,
+CKFERF,7,7,rw,
+WDRF,6,6,rw,
+SWDRF,5,5,rw,
+LV2RF,4,4,rw,
+LV1RF,3,3,rw,
+LV0RF,2,2,rw,
+PINRF,1,1,rw,
+PORF,0,0,rw,$,
+
+//PWC_LVDCR0  LVD Control Register 0
+PWC_LVDCR0,10,32,rw,00000000,FFFDFFFC,
+L2EN,31,31,rw,
+L2CMPOE,30,30,rw,
+L2IRE,29,29,rw,
+L2IRS,28,28,rw,
+L2NMIS,27,27,rw,
+L2NFDIS,26,26,rw,
+L2NFS,25,24,rw,
+L2LVL,23,20,rw,
+L2IEGS,19,18,rw,
+EXVCCINEN,16,16,rw,
+L1EN,15,15,rw,
+L1CMPOE,14,14,rw,
+L1IRE,13,13,rw,
+L1IRS,12,12,rw,
+L1NMIS,11,11,rw,
+L1NFDIS,10,10,rw,
+L1NFS,9,8,rw,
+L1LVL,7,4,rw,
+L1IEGS,3,2,rw,$,
+
+//PWC_LVDCSR1  LVD Control Status Register 1
+PWC_LVDCSR1,14,8,r,00,9F,
+L0CMPOE,7,7,rw,
+L0MON,4,4,rw,
+L2DETF,3,3,rw,
+L1DETF,2,2,rw,
+L2MON,1,1,r,
+L1MON,0,0,r,$,
+
+//PWC_FPRC  Function Protect  Register
+PWC_FPRC,20,16,rw,0000,FFFF,
+FPRCWE,15,8,w,
+FPRCB7,7,7,rw,
+FPRCB6,6,6,rw,
+FPRCB5,5,5,rw,
+FPRCB4,4,4,rw,
+LVRWE,3,3,rw,
+FPRCB2,2,2,rw,
+PWRWE,1,1,rw,
+CKRWE,0,0,rw,$,
+
+//PWC_DBGC  Debug Mode Control Register
+PWC_DBGC,40,16,rw,0000,8001,
+TRSTF,15,15,rw,
+DBGEN,0,0,rw,$,
+

@@ -1,0 +1,50 @@
+//DCU
+DCU,40052000,0,4,4,4,8,4,C,4,10,4,14,4,18,4,
+
+//CTL  DCU control register
+DCU_CTL,0,32,rw,80000000,8000011F,
+INTEN,31,31,rw,
+COMP_TRG,8,8,rw,
+DATASIZE,4,3,rw,
+MODE,2,0,rw,$,
+
+//FLAG  DCU flag register
+DCU_FLAG,4,32,r,00000000,0000007F,
+FLAG_GT1,6,6,r,
+FLAG_EQ1,5,5,r,
+FLAG_LS1,4,4,r,
+FLAG_GT2,3,3,r,
+FLAG_EQ2,2,2,r,
+FLAG_LS2,1,1,r,
+FLAG_OP,0,0,r,$,
+
+//DATA0  DCU data register0
+DCU_DATA0,8,32,rw,00000000,FFFFFFFF,$,
+
+//DATA1  DCU data register1
+DCU_DATA1,C,32,rw,00000000,FFFFFFFF,$,
+
+//DATA2  DCU data register2
+DCU_DATA2,10,32,rw,00000000,FFFFFFFF,$,
+
+//FLAGCLR  DCU flag clear register
+DCU_FLAGCLR,14,32,w,00000000,0000007F,
+CLR_GT1,6,6,w,
+CLR_EQ1,5,5,w,
+CLR_LS1,4,4,w,
+CLR_GT2,3,3,w,
+CLR_EQ2,2,2,w,
+CLR_LS2,1,1,w,
+CLR_OP,0,0,w,$,
+
+//INTSEL  DCU interrupt select register
+DCU_INTSEL,18,32,rw,00000000,000001FF,
+INT_WIN,8,7,rw,
+INT_GT1,6,6,rw,
+INT_EQ1,5,5,rw,
+INT_LS1,4,4,rw,
+INT_GT2,3,3,rw,
+INT_EQ2,2,2,rw,
+INT_LS2,1,1,rw,
+INT_OP,0,0,rw,$,
+

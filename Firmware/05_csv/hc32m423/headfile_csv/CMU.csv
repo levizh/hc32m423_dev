@@ -1,0 +1,112 @@
+//CMU
+CMU,40054400,0,1,4,1,8,4,c,1,10,1,14,1,15,1,18,1,1c,1,20,1,24,1,28,1,30,4,3C,1,40,1,44,4,48,1,4c,1,
+
+//CMU_ADCKSEL  AD Clock Config Register
+CMU_ADCKSEL,0,8,rw,00,07,
+ADCKSEL,2,0,rw,$,
+
+//CMU_XTALSTDSR  XTAL Clock Stop Dectect Flag Register
+CMU_XTALSTDSR,4,8,rw,00,01,
+XTALSTDF,0,0,rw,$,
+
+//CMU_SCFGR  System Clock Divide Config Register
+CMU_SCFGR,8,32,rw,00000000,07007007,
+HCLKS,26,24,rw,
+PCLK4S,14,12,rw,
+PCLK1S,2,0,rw,$,
+
+//CMU_CKSWR  System Clock Source Switch Register
+CMU_CKSWR,c,8,rw,00,07,
+CKSW,2,0,rw,$,
+
+//CMU_XTALCR  XTAL Clock Control Register
+CMU_XTALCR,10,8,rw,01,01,
+XTALSTP,0,0,rw,$,
+
+//CMU_XTALCFGR  XTAL Clock Config Register
+CMU_XTALCFGR,14,8,rw,80,F0,
+SUPDRV,7,7,rw,
+XTALMS,6,6,rw,
+XTALDRV,5,4,rw,$,
+
+//CMU_XTALSTBCR  XTAL Clock Stable Control Register
+CMU_XTALSTBCR,15,8,rw,00,07,
+XTALSTB,2,0,rw,$,
+
+//CMU_HRCCR  HRC Control Register
+CMU_HRCCR,18,8,rw,00,01,
+HRCSTP,0,0,rw,$,
+
+//CMU_HRCCFGR  HRC Frequency Config Register
+CMU_HRCCFGR,1c,8,rw,00,0F,
+HRCFREQS,3,0,rw,$,
+
+//CMU_OSCSTBSR  Clock Stable Flag Register
+CMU_OSCSTBSR,20,8,r,00,29,
+PLLSTBF,5,5,r,
+XTALSTBF,3,3,r,
+HRCSTBF,0,0,r,$,
+
+//CMU_MCOCFGR  MCO Clock Control Register
+CMU_MCOCFGR,24,8,rw,00,FF,
+MCO1EN,7,7,rw,
+MCO1DIV,6,4,rw,
+MCO1SEL,3,0,rw,$,
+
+//CMU_XTALSTDCR  XTAL Clock Stop Dectect Control Register
+CMU_XTALSTDCR,28,8,rw,00,87,
+XTALSTDE,7,7,rw,
+XTALSTDRIS,2,2,rw,
+XTALSTDRE,1,1,rw,
+XTALSTDIE,0,0,rw,$,
+
+//CMU_FCG  Clock Control Register
+CMU_FCG,30,32,rw,FFFFFFFF,3F7F0FB7,
+SPI_1,29,29,rw,
+IIC_1,28,28,rw,
+UART4,27,27,rw,
+UART3,26,26,rw,
+UART2,25,25,rw,
+UART1,24,24,rw,
+DCU,22,22,rw,
+FCM,21,21,rw,
+EMB,20,20,rw,
+TIMB_1,19,19,rw,
+TIM4_1,18,18,rw,
+TIM0_2,17,17,rw,
+TIM0_1,16,16,rw,
+TIMA4,11,11,rw,
+TIMA3,10,10,rw,
+TIMA2,9,9,rw,
+TIMA1,8,8,rw,
+CRC,7,7,rw,
+DMA,5,5,rw,
+AOS,4,4,rw,
+CMP,2,2,rw,
+CTC,1,1,rw,
+ADC,0,0,rw,$,
+
+//CMU_LRCCR  LRC Control Register
+CMU_LRCCR,3C,8,rw,00,01,
+LRCSTP,0,0,rw,$,
+
+//CMU_MRCCR  MRC Control Register
+CMU_MRCCR,40,8,rw,00,01,
+MRCSTP,0,0,rw,$,
+
+//CMU_PLLCFGR  PLL Config Register
+CMU_PLLCFGR,44,32,rw,00000000,30003F87,
+PLLP,29,28,rw,
+PLLN,13,8,rw,
+PLLSRC,7,7,rw,
+PLLM,2,0,rw,$,
+
+//CMU_PLLCR  PLL Control Register
+CMU_PLLCR,48,8,rw,01,01,
+PLLOFF,0,0,rw,$,
+
+//CMU_TPIUCKCFGR  TPIU Clock Config Register
+CMU_TPIUCKCFGR,4c,8,rw,00,83,
+TPIUCKOE,7,7,rw,
+TPIUCKS,1,0,rw,$,
+

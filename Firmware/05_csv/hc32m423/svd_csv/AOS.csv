@@ -1,0 +1,55 @@
+//AOS
+AOS,40010800,0,4,20,4,24,4,40,4,44,4,50,4,60,4,64,4,80,4,84,4,88,4,8c,4,90,4,
+
+//INTC_STRGCR  AOS software trigger register
+AOS_INTC_STRGCR,0,32,w,00000000,00000001,
+STRG,0,0,w,$,
+
+//TMR0_0_HTSSR  TMR0 trigger source select register
+AOS_TMR00_HTSSR,20,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//TMR0_1_HTSSR  TMR0 trigger source select register
+AOS_TMR01_HTSSR,24,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//TMRA0_HTSSR  TMRA trigger source select register
+AOS_TMRA0_HTSSR,40,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//TMRA1_HTSSR  TMRA trigger source select register
+AOS_TMRA1_HTSSR,44,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//TMRB_HTSSR  TMRB trigger source select register
+AOS_TMRB_HTSSR,50,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//ADC_ITRGSELR0  ADC1 trigger source select register
+AOS_ADC_ITRGSELR0,60,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//ADC_ITRGSELR1  ADC1 trigger source select register
+AOS_ADC_ITRGSELR1,64,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//DMA0_TRGSEL  DMA Channel 0 trigger source select register
+AOS_DMA0_TRGSEL,80,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//DMA1_TRGSEL  DMA Channel 1  trigger source select register
+AOS_DMA1_TRGSEL,84,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//DMA2_TRGSEL  DMA Channel 2 trigger source select register
+AOS_DMA2_TRGSEL,88,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//DMA3_TRGSEL  DMA Channel 3 trigger source select register
+AOS_DMA3_TRGSEL,8c,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+
+//DCU_TRGSEL  DCU trigger source select register
+AOS_DCU_TRGSEL,90,32,rw,000001FF,000001FF,
+TRGSEL,8,0,rw,$,
+

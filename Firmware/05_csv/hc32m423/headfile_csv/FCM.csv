@@ -1,0 +1,53 @@
+//FCM
+FCM,40048400,0,4,4,4,8,4,c,4,10,4,14,4,18,4,1C,4,20,4,
+
+//FCM_LVR  Low Limit Control Register
+FCM_LVR,0,32,rw,00000000,0000FFFF,
+LVR,15,0,rw,$,
+
+//FCM_UVR  Upper Limit Control Register
+FCM_UVR,4,32,rw,00000000,0000FFFF,
+UVR,15,0,rw,$,
+
+//FCM_CNTR  Counter Register
+FCM_CNTR,8,32,r,00000000,0000FFFF,
+CNTR,15,0,r,$,
+
+//FCM_STR  Start Control Register
+FCM_STR,c,32,rw,00000000,00000001,
+START,0,0,rw,$,
+
+//FCM_MCCR  Measurement Control Register
+FCM_MCCR,10,32,rw,00000000,000000F3,
+MCKS,7,4,rw,
+MDIVS,1,0,rw,$,
+
+//FCM_RCCR  Reference Control Register
+FCM_RCCR,14,32,rw,00000000,0000B3FB,
+EXREFE,15,15,rw,
+EDGES,13,12,rw,
+DNFS,9,8,rw,
+INEXS,7,7,rw,
+RCKS,6,3,rw,
+RDIVS,1,0,rw,$,
+
+//FCM_RIER  Reset Interupt Control Register
+FCM_RIER,18,32,rw,00000000,00000097,
+ERRE,7,7,rw,
+ERRINTRS,4,4,rw,
+OVFIE,2,2,rw,
+MENDIE,1,1,rw,
+ERRIE,0,0,rw,$,
+
+//FCM_SR  Flag Register
+FCM_SR,1C,32,r,00000000,00000007,
+OVF,2,2,r,
+MENDF,1,1,r,
+ERRF,0,0,r,$,
+
+//FCM_CLR  Flag Clear Register
+FCM_CLR,20,32,w,00000000,00000007,
+OVFCLR,2,2,w,
+MENDFCLR,1,1,w,
+ERRFCLR,0,0,w,$,
+

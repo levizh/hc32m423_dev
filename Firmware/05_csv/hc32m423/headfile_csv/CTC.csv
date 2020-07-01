@@ -1,0 +1,23 @@
+//CTC
+CTC,40010000,0,4,4,4,8,4,
+
+//CTC_CR1  Control Register
+CTC_CR1,0,32,rw,00000000,003F00F7,
+TRMVAL,21,16,rw,
+CTCEN,7,7,rw,
+ERRIE,6,6,rw,
+REFCKS,5,4,rw,
+REFPSC,2,0,rw,$,
+
+//CTC_CR2  Control Register
+CTC_CR2,4,32,rw,00000000,FFFF00FF,
+RLDVAL,31,16,rw,
+OFSVAL,7,0,rw,$,
+
+//CTC_STR  Status Register
+CTC_STR,8,32,r,00000000,0000000F,
+CTCBSY,3,3,r,
+TRMUDF,2,2,r,
+TRMOVF,1,1,r,
+TRIMOK,0,0,r,$,
+

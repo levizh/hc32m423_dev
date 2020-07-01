@@ -1,0 +1,46 @@
+//SPI
+SPI,4001C000,0,4,4,4,c,4,14,4,18,4,
+
+//SPI_DR  data Register
+SPI_DR,0,32,rw,00000000,0000FFFF,
+SPD,15,0,rw,$,
+
+//SPI_CR1  control Register
+SPI_CR1,4,32,rw,00000000,0000FF7B,
+PAE,15,15,rw,
+PAOE,14,14,rw,
+PATE,13,13,rw,
+MODFE,12,12,rw,
+IDIE,11,11,rw,
+RXIE,10,10,rw,
+TXIE,9,9,rw,
+EIE,8,8,rw,
+SPE,6,6,rw,
+SPLPBK2,5,5,rw,
+SPLPBK,4,4,rw,
+MSTR,3,3,rw,
+TXMDS,1,1,rw,
+SPIMDS,0,0,rw,$,
+
+//SPI_CFG1  config Register1
+SPI_CFG1,c,32,rw,00000010,00000100,
+SS0PV,8,8,rw,$,
+
+//SPI_SR  status Register
+SPI_SR,14,32,rw,00000020,000000BF,
+RDFF,7,7,rw,
+TDEF,5,5,rw,
+UDRERF,4,4,rw,
+PERF,3,3,rw,
+MODFERF,2,2,rw,
+IDLNF,1,1,r,
+OVRERF,0,0,rw,$,
+
+//SPI_CFG2  config Register2
+SPI_CFG2,18,32,rw,0000031D,0000111F,
+LSBF,12,12,rw,
+DSIZE,8,8,rw,
+MBR,4,2,rw,
+CPOL,1,1,rw,
+CPHA,0,0,rw,$,
+

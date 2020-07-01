@@ -1,0 +1,20 @@
+//RMU
+RMU,40054100,0,2,
+
+//RMU_RSTF0  Reset Flag Register0
+RMU_RSTF0,0,16,rw,0000,F5FF,
+CLRF,15,15,rw,
+MULTIRF,14,14,rw,
+XTALERF,13,13,rw,
+CPULKUPRF,12,12,rw,
+RAMPERF,10,10,rw,
+SWRF,8,8,rw,
+CKFERF,7,7,rw,
+WDRF,6,6,rw,
+SWDRF,5,5,rw,
+LV2RF,4,4,rw,
+LV1RF,3,3,rw,
+LV0RF,2,2,rw,
+PINRF,1,1,rw,
+PORF,0,0,rw,$,
+

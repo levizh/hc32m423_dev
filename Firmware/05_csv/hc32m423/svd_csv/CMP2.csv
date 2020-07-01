@@ -1,0 +1,50 @@
+//CMP2
+CMP2,4004A010,0,1,1,1,2,1,3,1,4,1,5,1,
+
+//CMP2_MDR  Model Register
+CMP2_MDR,0,8,rw,00,83,
+CMON,7,7,r,
+CWDE,1,1,rw,
+CENB,0,0,rw,$,
+
+//CMP2_FIR  Filter Control Register
+CMP2_FIR,1,8,rw,00,73,
+CIEN,6,6,rw,
+EDGS,5,4,rw,
+FCKS,1,0,rw,$,
+
+//CMP2_OCR  Output Control Register
+CMP2_OCR,2,8,rw,00,1F,
+TWOL,4,4,rw,
+TWOE,3,3,rw,
+CPOE,2,2,rw,
+COPS,1,1,rw,
+COEN,0,0,rw,$,
+
+//CMP2_VSR  Voltage Select Register
+CMP2_VSR,3,8,rw,00,F7,
+CVSL,7,4,rw,
+RVSL,2,0,rw,$,
+
+//CMP2_TWR1  Timer Window Output Control Register 1
+CMP2_TWR1,4,8,rw,00,FF,
+CTWS7,7,7,rw,
+CTWS6,6,6,rw,
+CTWS5,5,5,rw,
+CTWS4,4,4,rw,
+CTWS3,3,3,rw,
+CTWS2,2,2,rw,
+CTWS1,1,1,rw,
+CTWS0,0,0,rw,$,
+
+//CMP2_TWR2  Timer Window Output Control Register 2
+CMP2_TWR2,5,8,rw,00,FF,
+CTWP7,7,7,rw,
+CTWP6,6,6,rw,
+CTWP5,5,5,rw,
+CTWP4,4,4,rw,
+CTWP3,3,3,rw,
+CTWP2,2,2,rw,
+CTWP1,1,1,rw,
+CTWP0,0,0,rw,$,
+

@@ -1,0 +1,144 @@
+//TMRA4
+TMRA4,40015C00,0,4,4,4,40,4,44,4,80,4,84,4,88,4,8C,4,90,4,94,4,98,4,9C,4,C0,4,100,4,104,4,140,4,144,4,
+
+//TMRA_CNTER  Counter Value Register
+TMRA_CNTER,0,32,rw,00000000,0000FFFF,
+CNT,15,0,rw,$,
+
+//TMRA_PERAR  Period Value Register
+TMRA_PERAR,4,32,rw,0000FFFF,0000FFFF,
+PER,15,0,rw,$,
+
+//TMRA_CMPAR1  Compare Value Register 1
+TMRA_CMPAR1,40,32,rw,0000FFFF,0000FFFF,
+CMP,15,0,rw,$,
+
+//TMRA_CMPAR2  Compare Value Register 2
+TMRA_CMPAR2,44,32,rw,0000FFFF,0000FFFF,
+CMP,15,0,rw,$,
+
+//TMRA_BCSTR  Basic Control and Status Register
+TMRA_BCSTR,80,32,rw,00000002,0000F1FF,
+UDFF,15,15,rw,
+OVFF,14,14,rw,
+INENUDF,13,13,rw,
+INENOVF,12,12,rw,
+OVSTP,8,8,rw,
+CKDIV,7,4,rw,
+SYNST,3,3,rw,
+MODE,2,2,rw,
+DIR,1,1,rw,
+START,0,0,rw,$,
+
+//TMRA_HCONR  Hardware Control Event Select Register
+TMRA_HCONR,84,32,rw,00000000,00003777,
+HCLE4,13,13,rw,
+HCLE3,12,12,rw,
+HCLE2,10,10,rw,
+HCLE1,9,9,rw,
+HCLE0,8,8,rw,
+HSTP2,6,6,rw,
+HSTP1,5,5,rw,
+HSTP0,4,4,rw,
+HSTA2,2,2,rw,
+HSTA1,1,1,rw,
+HSTA0,0,0,rw,$,
+
+//TMRA_HCUPR  Hardware Count Up Event Select Register
+TMRA_HCUPR,88,32,rw,00000000,00001FFF,
+HCUP12,12,12,rw,
+HCUP11,11,11,rw,
+HCUP10,10,10,rw,
+HCUP9,9,9,rw,
+HCUP8,8,8,rw,
+HCUP7,7,7,rw,
+HCUP6,6,6,rw,
+HCUP5,5,5,rw,
+HCUP4,4,4,rw,
+HCUP3,3,3,rw,
+HCUP2,2,2,rw,
+HCUP1,1,1,rw,
+HCUP0,0,0,rw,$,
+
+//TMRA_HCDOR  Hardware Count Down Event Select Register
+TMRA_HCDOR,8C,32,rw,00000000,00001FFF,
+HCDO12,12,12,rw,
+HCDO11,11,11,rw,
+HCDO10,10,10,rw,
+HCDO9,9,9,rw,
+HCDO8,8,8,rw,
+HCDO7,7,7,rw,
+HCDO6,6,6,rw,
+HCDO5,5,5,rw,
+HCDO4,4,4,rw,
+HCDO3,3,3,rw,
+HCDO2,2,2,rw,
+HCDO1,1,1,rw,
+HCDO0,0,0,rw,$,
+
+//TMRA_ICONR  Interrupt Enable Control Register
+TMRA_ICONR,90,32,rw,00000000,00000003,
+ITEN2,1,1,rw,
+ITEN1,0,0,rw,$,
+
+//TMRA_ECONR  Event Enable Control Register
+TMRA_ECONR,94,32,rw,00000000,00000003,
+ETEN2,1,1,rw,
+ETEN1,0,0,rw,$,
+
+//TMRA_FCONR  Filter Control Register
+TMRA_FCONR,98,32,rw,00000000,00007707,
+NOFICKCB,14,13,rw,
+NOFIENCB,12,12,rw,
+NOFICKCA,10,9,rw,
+NOFIENCA,8,8,rw,
+NOFICKTG,2,1,rw,
+NOFIENTG,0,0,rw,$,
+
+//TMRA_STFLR  Status Register
+TMRA_STFLR,9C,32,rw,00000000,00000003,
+CMPF2,1,1,rw,
+CMPF1,0,0,rw,$,
+
+//TMRA_BCONR  Buffer Control Register
+TMRA_BCONR,C0,32,rw,00000000,00000007,
+BSE1,2,2,rw,
+BSE0,1,1,rw,
+BEN,0,0,rw,$,
+
+//TMRA_CCONR1  Capture Control Register 1
+TMRA_CCONR1,100,32,rw,00000000,00007071,
+NOFICKCP,14,13,rw,
+NOFIENCP,12,12,rw,
+HICP2,6,6,rw,
+HICP1,5,5,rw,
+HICP0,4,4,rw,
+CAPMD,0,0,rw,$,
+
+//TMRA_CCONR2  Capture Control Register 2
+TMRA_CCONR2,104,32,rw,00000000,00007071,
+NOFICKCP,14,13,rw,
+NOFIENCP,12,12,rw,
+HICP2,6,6,rw,
+HICP1,5,5,rw,
+HICP0,4,4,rw,
+CAPMD,0,0,rw,$,
+
+//TMRA_PCONR1  Port Control Register 1
+TMRA_PCONR1,140,32,rw,00000000,000013FF,
+OUTEN,12,12,rw,
+FORC,9,8,rw,
+PERC,7,6,rw,
+CMPC,5,4,rw,
+STPC,3,2,rw,
+STAC,1,0,rw,$,
+
+//TMRA_PCONR2  Port Control Register 2
+TMRA_PCONR2,144,32,rw,00000000,000013FF,
+OUTEN,12,12,rw,
+FORC,9,8,rw,
+PERC,7,6,rw,
+CMPC,5,4,rw,
+STPC,3,2,rw,
+STAC,1,0,rw,$,
+

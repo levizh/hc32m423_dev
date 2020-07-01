@@ -1,0 +1,18 @@
+//DAC
+DAC,4004A100,0,2,8,2,C,2,
+
+//CMP_DADR1  DAC data Register
+CMP_DADR1,0,16,rw,0000,FFFF,
+DATA2,15,8,rw,
+DATA1,7,0,rw,$,
+
+//CMP_DACR1  DAC Control Register
+CMP_DACR1,8,16,rw,0000,0101,
+ALGN,8,8,rw,
+DAEN,0,0,rw,$,
+
+//CMP_DADC1  DA to AD Register
+CMP_DADC1,C,16,rw,0000,FF01,
+WPRT,15,8,rw,
+DASW,0,0,rw,$,
+
